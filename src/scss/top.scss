@@ -1,0 +1,97 @@
+.top {
+   background-image: url("../img/top-bg.jpg");
+   padding-top: 200px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__col1 {
+   }
+   &__title {
+      font-family: "Poiret One", cursive;
+      font-size: 77px;
+      text-shadow: 1px 1px 40px #000, 1px 1px 30px #000, 1px 1px 50px #000, 1px 1px 60px #000;
+   }
+   &__title-img {
+   }
+   &__text {
+      margin-top: 20px;
+      font-weight: 300;
+      font-size: 32px;
+      max-width: 853px;
+      text-shadow: 1px 1px 40px #000, 1px 1px 30px #000, 1px 1px 50px #000, 1px 1px 60px #000;
+
+   }
+   &__col2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+.play-video {
+   overflow: hidden;
+   cursor: pointer;
+   width: 188px;
+   height: 188px;
+   // background-color: rgb(246, 100, 100);
+   position: relative;
+   border-radius: 50%;
+   &:hover {
+      .play-video__ico {
+         path {
+            transition: all 0.3s;
+            fill: #ff00b7;
+            filter: drop-shadow(0px 4px 22px #ff00b7);
+         }
+      }
+      .play-video__circle {
+         transition: all 0.3s;
+         filter: drop-shadow(0px 0px 3px #ff00b7);
+      }
+   }
+   &__ico {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-43%, -50%);
+      z-index: 5;
+   }
+   &__circle {
+      animation: rotate 15s infinite linear;
+      position: absolute;
+      transform: scale(195%) rotate(0deg);
+      //
+      // transform: rotate(45deg);
+   }
+}
+.be-model {
+   cursor: pointer;
+   text-align: center;
+   transition: all 0.3s;
+   .test1, .test, .be-model__text{
+      transition: all 0.3s;
+   }
+   &:hover {
+      .test1 {
+         stroke: #ff00b7;
+         
+      }
+      .test {
+         fill: #ff00b7;
+        
+      }
+      .be-model__text{
+         color: #ff00b7;
+         
+      }
+   }
+   &__text {
+      font-weight: 300;
+      font-size: 30px;
+   }
+}

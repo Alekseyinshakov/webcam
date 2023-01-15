@@ -24,7 +24,6 @@
       font-size: 32px;
       max-width: 853px;
       text-shadow: 1px 1px 40px #000, 1px 1px 30px #000, 1px 1px 50px #000, 1px 1px 60px #000;
-
    }
    &__col2 {
       display: flex;
@@ -34,14 +33,27 @@
    }
 }
 .play-video {
-   overflow: hidden;
+   // overflow: hidden;
    cursor: pointer;
    width: 188px;
    height: 188px;
    // background-color: rgb(246, 100, 100);
    position: relative;
    border-radius: 50%;
+   &::before {
+      transition: all 0.3s;
+      position: absolute;
+      content: "";
+      background: #ff00b7;
+      filter: blur(112.5px);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+   }
    &:hover {
+      &::before{
+         opacity: 1;
+      }
       .play-video__ico {
          path {
             transition: all 0.3s;
@@ -50,6 +62,8 @@
          }
       }
       .play-video__circle {
+         
+         
          transition: all 0.3s;
          filter: drop-shadow(0px 0px 3px #ff00b7);
       }
@@ -64,30 +78,45 @@
    &__circle {
       animation: rotate 15s infinite linear;
       position: absolute;
-      transform: scale(195%) rotate(0deg);
+      transform: rotate(0deg);
       //
       // transform: rotate(45deg);
    }
 }
 .be-model {
+   position: relative;
+   &::before {
+      transition: all 0.3s;
+
+      position: absolute;
+      content: "";
+      background: #ff00b7;
+      filter: blur(112.5px);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+   }
+
    cursor: pointer;
    text-align: center;
    transition: all 0.3s;
-   .test1, .test, .be-model__text{
+   .test1,
+   .test,
+   .be-model__text {
       transition: all 0.3s;
    }
    &:hover {
+      &::before{
+         opacity: 1;
+      }
       .test1 {
          stroke: #ff00b7;
-         
       }
       .test {
          fill: #ff00b7;
-        
       }
-      .be-model__text{
+      .be-model__text {
          color: #ff00b7;
-         
       }
    }
    &__text {

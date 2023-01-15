@@ -114,10 +114,10 @@ legend {
 }
 @keyframes rotate {
   0% {
-    transform: scale(198%) rotate(359deg);
+    transform: rotate(359deg);
   }
   100% {
-    transform: scale(198%) rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 .header {
@@ -244,12 +244,24 @@ legend {
 }
 
 .play-video {
-  overflow: hidden;
   cursor: pointer;
   width: 188px;
   height: 188px;
   position: relative;
   border-radius: 50%;
+}
+.play-video::before {
+  transition: all 0.3s;
+  position: absolute;
+  content: "";
+  background: #ff00b7;
+  filter: blur(112.5px);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.play-video:hover::before {
+  opacity: 1;
 }
 .play-video:hover .play-video__ico path {
   transition: all 0.3s;
@@ -270,16 +282,32 @@ legend {
 .play-video__circle {
   animation: rotate 15s infinite linear;
   position: absolute;
-  transform: scale(195%) rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .be-model {
+  position: relative;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s;
 }
-.be-model .test1, .be-model .test, .be-model .be-model__text {
+.be-model::before {
   transition: all 0.3s;
+  position: absolute;
+  content: "";
+  background: #ff00b7;
+  filter: blur(112.5px);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.be-model .test1,
+.be-model .test,
+.be-model .be-model__text {
+  transition: all 0.3s;
+}
+.be-model:hover::before {
+  opacity: 1;
 }
 .be-model:hover .test1 {
   stroke: #ff00b7;

@@ -16,6 +16,10 @@ export function rightMenu() {
          closeMenu()
       })
 
+      $bg.addEventListener('click', () => {
+         closeMenu()
+      })
+
 
       function openMenu(params) {
          $rightMenu.classList.add('active')

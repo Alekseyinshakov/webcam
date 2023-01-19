@@ -2,7 +2,7 @@
    
    background-color: #2E1056;
    &__inner{
-      height: 200px;
+      min-height: 200px;
       display: flex;
       justify-content: space-between;
       align-items: center;

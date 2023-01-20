@@ -90,6 +90,19 @@
 }
 
 @media(max-width: 476px){
+   .footer__tel-box, .footer__adress{
+      width: auto;
+   }
+   .right__list{
+      padding-left: 50px;
+      padding-right: 50px;
+      .contact-btn{
+         font-size: 24px;
+      }
+   }
+   .right__item{
+      // text-align: center;
+   }
    .header__inner{
       height: 70px;
    }

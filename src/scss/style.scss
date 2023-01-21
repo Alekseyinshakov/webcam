@@ -7,37 +7,45 @@
 @import "header.scss";
 @import "footer.scss";
 @import "top.scss";
+@import "why.scss";
 
 @import "adaptive.scss";
-
-
 
 body {
    font-family: "Montserrat", sans-serif;
    // font-family: "Poiret One", cursive;
    font-size: 20px;
    line-height: 1.2;
-   background-color: #37167A;
+   background-color: #37167a;
+   color: #fff;
+   font-weight: 300;
+}
+
+a {
    color: #fff;
 }
 
-a{
-   color:#fff;
-}
-
-.container{
+.container {
    max-width: 1440px;
    margin: 0 auto;
    padding-left: 6%;
    padding-right: 6%;
-   
 }
 
-.flex-body{
+.flex-body {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
 }
-.main{
-   flex-grow: 1;  
+.main {
+   flex-grow: 1;
+}
+
+.title {
+   font-family: "Poiret One", cursive;
+   font-size: 77px;
+   line-height: 90px;
+   text-align: center;
+   text-shadow: 0px 4px 17px #FF00B7;
+   position: relative;
 }

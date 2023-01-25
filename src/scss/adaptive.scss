@@ -1,6 +1,16 @@
 ////////////////ADAPTIVE
 
 @media(max-width: 1266px){
+   .title{
+      font-size: 50px;
+   }
+   
+   .why__items{
+      grid-template-columns: 1fr 1fr;
+   }
+
+
+
    .top__col1{
       width: 650px;
    }
@@ -45,6 +55,22 @@
 }
 
 @media(max-width: 766px){
+   .why__items{
+      display: none;
+   }
+   .why__items-slider{
+      display: block;
+   }
+   .why{
+      .title{
+         &::after{
+            display: none;
+         }
+      }
+   }
+
+
+
    .footer__inner{
       flex-direction: column;
       justify-content: center;

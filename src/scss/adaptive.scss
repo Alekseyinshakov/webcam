@@ -1,6 +1,7 @@
 ////////////////ADAPTIVE
 
 @media(max-width: 1266px){
+   
    .title{
       font-size: 50px;
    }
@@ -24,6 +25,13 @@
 
 
 @media(max-width: 1000px){
+   .record{
+      .title{
+         &::after{
+            display: none;
+         }
+      }
+   }
    .calc{
       padding-bottom: 150px;
    }
@@ -81,8 +89,14 @@
    }
    .calc__button{
       font-size: 18px;
-      width: 280px;
+      width: 270px;
       height: 65px
+   }
+   .calc__value-item{
+      margin-bottom: 28px;
+   }
+   .calc__value-caption{
+      margin-bottom: 12px;
    }
 
    .why__items{
@@ -146,6 +160,52 @@
 }
 
 @media(max-width: 476px){
+   .record__img{
+      width: 713px;
+      top: auto;
+      bottom: 0;
+      right: -351px;
+      // &::after{
+      //    position: absolute;
+      //    content: "";
+      //    width: 100px;
+      //    height: 100px;
+      //    top: 0;
+      //    left: 0;
+      //    background-color: #9d2424;
+      //    z-index: 4;
+      // }
+   }
+   .record__img-mask{
+      position: absolute;
+      width: 713px;
+      height: 495px;
+      bottom: 0;
+      right: -351px;
+      background-color: rgba($color: #37167a, $alpha: .7);
+      z-index: -1;
+   }
+   .record{
+      .rec-label{
+      font-size: 12px;
+   }
+   }
+   
+   .title{
+      font-size: 42px;
+   }
+   .record{
+      &__tel{
+         font-size: 30px;
+      }
+      &__text{
+         font-size: 22px;
+      }
+      &__adress{
+         font-size: 22px;
+
+      }
+   }
    .why{
       padding-bottom: 90px;
    }

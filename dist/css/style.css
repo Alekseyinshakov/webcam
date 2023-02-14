@@ -2252,7 +2252,7 @@ button.swiper-pagination-bullet {
 .col2 input[type=text]:focus,
 .col2 input[type=email]:focus,
 .col2 input[type=tel]:focus {
-  background-color: rgba(255, 0, 183, 0.8);
+  background-color: rgba(55, 22, 122, 0.93);
 }
 .col2 input {
   height: 62px;
@@ -2262,7 +2262,7 @@ button.swiper-pagination-bullet {
   resize: none;
 }
 .col2 textarea:focus {
-  background-color: rgba(255, 0, 183, 0.8);
+  background-color: rgba(55, 22, 122, 0.93);
 }
 .col2 #email {
   width: 100%;

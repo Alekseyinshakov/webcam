@@ -128,7 +128,7 @@
   input[type="email"]:focus,
   input[type="tel"]:focus
   {
-    background-color: rgba($color: #ff00b7, $alpha: 0.8);
+    background-color: rgba($color: #37167a, $alpha: 0.93);
   }
   input {
     height: 62px;
@@ -137,7 +137,7 @@
     width: 100%;
     resize: none;
     &:focus{
-      background-color: rgba($color: #ff00b7, $alpha: 0.8);
+      background-color: rgba($color: #37167a, $alpha: 0.93);
     }
   }
   #email {

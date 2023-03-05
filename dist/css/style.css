@@ -2532,6 +2532,15 @@ a {
   .about__inner {
     padding-top: 0;
   }
+  .about__play-video::after {
+    transform: scale(170%);
+  }
+  .about__list-item-text {
+    font-size: 14px;
+  }
+  .about__content p {
+    font-size: 16px;
+  }
   .record__img {
     width: 713px;
     top: auto;

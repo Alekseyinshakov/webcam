@@ -1,166 +1,188 @@
 ////////////////ADAPTIVE
 
-@media(max-width: 1266px){
-   
-   .title{
+@media (max-width: 1266px) {
+   .title {
       font-size: 50px;
    }
-   
-   .why__items{
+
+   .why__items {
       grid-template-columns: 1fr 1fr;
    }
 
-
-
-   .top__col1{
+   .top__col1 {
       width: 650px;
    }
-   .top__title{
+   .top__title {
       font-size: 50px;
    }
-   .top__text{
+   .top__text {
       font-size: 28px;
    }
 }
 
+@media (max-width: 1000px) {
+   .about {
+      &__inner{
+         padding-top: 40px;
+      }
+      &__wrap {
+         display: block;
+      }
+      &__content{
+         width: auto;
+      }
+      &__img-container{
+         width: auto;
+         & > img{
+            display: block;
+            margin: 0 auto;
+         }
+      }
+   }
 
-@media(max-width: 1000px){
-   .record{
-      .title{
-         &::after{
+   .record {
+      .title {
+         &::after {
             display: none;
          }
       }
    }
-   .calc{
+   .calc {
       padding-bottom: 150px;
    }
-   .top__col1{
+   .top__col1 {
       display: none;
    }
-   .top__col1-adaptive{
+   .top__col1-adaptive {
       display: block;
       align-self: start;
    }
-   .top__inner{
+   .top__inner {
       justify-content: center;
    }
-   .top{
+   .top {
       padding-top: 150px;
    }
-   .top__col2{
+   .top__col2 {
       width: 100%;
-      a{
+      a {
          align-self: end;
-      }      
+      }
    }
-   .be-model{
+   .be-model {
       align-self: end;
    }
 
-   .header__box{
-      .header__adress, .social, .contact-btn{
+   .header__box {
+      .header__adress,
+      .social,
+      .contact-btn {
          display: none;
       }
    }
 }
 
-@media(max-width: 766px){
-   .calc{
+@media (max-width: 766px) {
+   .calc {
       padding-bottom: 100px;
-      .title{
-         &::after{
+      .title {
+         &::after {
             display: none;
          }
       }
    }
-   .calc__wrap{
+   .calc__wrap {
       padding: 20px 20px;
    }
-   .calc__text{
+   .calc__text {
       margin-bottom: 0;
       font-size: 20px;
    }
-   .calc__value-title{
+   .calc__value-title {
       font-size: 24px;
    }
-   .calc__value-salary{
+   .calc__value-salary {
       font-size: 30px;
    }
-   .calc__button{
+   .calc__button {
       font-size: 18px;
       width: 270px;
-      height: 65px
+      height: 65px;
    }
-   .calc__value-item{
+   .calc__value-item {
       margin-bottom: 28px;
    }
-   .calc__value-caption{
+   .calc__value-caption {
       margin-bottom: 12px;
    }
 
-   .why__items{
+   .why__items {
       display: none;
    }
-   .why__items-slider{
+   .why__items-slider {
       display: block;
    }
-   .why{
-      .title{
-         &::after{
+   .why {
+      .title {
+         &::after {
             display: none;
          }
       }
    }
 
-
-
-   .footer__inner{
+   .footer__inner {
       flex-direction: column;
       justify-content: center;
       gap: 20px;
-      .social{
+      .social {
          justify-content: center;
       }
-      
    }
-   .footer__adress{
+   .footer__adress {
       margin: 0 auto;
       text-align: center;
-      br{
+      br {
          display: none;
       }
    }
-   .footer__tel-box{
+   .footer__tel-box {
       text-align: center;
       margin: 0 auto;
    }
-   .top{
+   .top {
       padding-top: 120px;
    }
 
-   .top__col1{
+   .top__col1 {
       width: auto;
    }
 
-   .top__title{
+   .top__title {
       font-size: 36px;
    }
-   .top__text{
+   .top__text {
       font-size: 22px;
    }
 
-   .play-video{
+   .play-video {
       transform: scale(0.7);
    }
-   .be-model{
+   .be-model {
       transform: scale(0.7);
    }
-   
 }
 
-@media(max-width: 476px){
-   .record__img{
+@media (max-width: 476px) {
+   .about__list-item{
+      align-items: start;
+   }
+   .about__content{
+      padding-top: 0;
+   }
+   .about__inner{
+      padding-top: 0;
+   }
+   .record__img {
       width: 713px;
       top: auto;
       bottom: 0;
@@ -176,96 +198,96 @@
       //    z-index: 4;
       // }
    }
-   .record__img-mask{
+   .record__img-mask {
       position: absolute;
       width: 713px;
       height: 495px;
       bottom: 0;
       right: -351px;
-      background-color: rgba($color: #37167a, $alpha: .7);
+      background-color: rgba($color: #37167a, $alpha: 0.7);
       z-index: -1;
    }
-   .record{
-      .rec-label{
-      font-size: 12px;
+   .record {
+      .rec-label {
+         font-size: 12px;
+      }
    }
-   }
-   
-   .title{
+
+   .title {
       font-size: 42px;
    }
-   .record{
-      &__tel{
+   .record {
+      &__tel {
          font-size: 30px;
       }
-      &__text{
+      &__text {
          font-size: 22px;
       }
-      &__adress{
+      &__adress {
          font-size: 22px;
-
       }
    }
-   .why{
+   .why {
       padding-bottom: 90px;
    }
-   .calc{
+   .calc {
       padding-top: 40px;
    }
-   .calc__set{
+   .calc__set {
       margin-top: 40px;
    }
-   .calc__wrap{
+   .calc__wrap {
       padding-right: 5px;
       padding-left: 5px;
    }
-   .calc__set-line-item{
+   .calc__set-line-item {
       font-size: 14px;
    }
-   .footer__tel-box, .footer__adress{
+   .footer__tel-box,
+   .footer__adress {
       width: auto;
    }
-   .right__list{
+   .right__list {
       padding-left: 50px;
       padding-right: 50px;
-      .contact-btn{
+      .contact-btn {
          font-size: 24px;
       }
    }
-   .right__item{
+   .right__item {
       // text-align: center;
    }
-   .header__inner{
+   .header__inner {
       height: 70px;
    }
-   .top{
+   .top {
       padding-top: 70px;
    }
 
-   .top__title{
+   .top__title {
       font-size: 24px;
    }
-   .top__text{
+   .top__text {
       font-size: 18px;
    }
-   .play-video-wrapper{
+   .play-video-wrapper {
       margin-right: -20px;
    }
-   .play-video{
+   .play-video {
       transform: scale(0.6);
    }
-   .be-model{
+   .be-model {
       transform: scale(0.6);
       margin-right: -20px;
    }
 
-   .footer{
+   .footer {
       font-size: 15px;
-      &__inner{
+      &__inner {
          gap: 10px;
          min-height: 180px;
       }
-      .social-item{
+      .social-item {
          transform: scale(0.7);
       }
    }

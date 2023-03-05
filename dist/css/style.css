@@ -1880,6 +1880,9 @@ button.swiper-pagination-bullet {
   z-index: 0;
   border-radius: 50%;
 }
+.play-video .test33 {
+  transform: scale(130%) translateX(2px);
+}
 .play-video::before {
   transition: all 0.3s;
   position: absolute;
@@ -2277,6 +2280,59 @@ button.swiper-pagination-bullet {
   font-size: 16px;
 }
 
+.about__inner {
+  padding-top: 109px;
+  padding-bottom: 35px;
+}
+.about__wrap {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__content {
+  padding-top: 55px;
+  width: 50%;
+}
+.about__content p {
+  margin-bottom: 35px;
+}
+.about__list {
+  font-size: 18px;
+}
+.about__list-item {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 30px;
+}
+.about__img-container {
+  width: 44%;
+  position: relative;
+}
+.about__play-video {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about__play-video::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/about/about-img-shadow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: scale(200%);
+}
+.about__play-video .play-video__circle {
+  filter: drop-shadow(0px 0px 3px #ff00b7);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -2316,6 +2372,10 @@ a {
   position: relative;
 }
 
+.pink-text {
+  text-shadow: 0px 4px 9px #FF00B7, 0px 4px 9px #FF00B7;
+}
+
 @media (max-width: 1266px) {
   .title {
     font-size: 50px;
@@ -2334,6 +2394,22 @@ a {
   }
 }
 @media (max-width: 1000px) {
+  .about__inner {
+    padding-top: 40px;
+  }
+  .about__wrap {
+    display: block;
+  }
+  .about__content {
+    width: auto;
+  }
+  .about__img-container {
+    width: auto;
+  }
+  .about__img-container > img {
+    display: block;
+    margin: 0 auto;
+  }
   .record .title::after {
     display: none;
   }
@@ -2362,7 +2438,9 @@ a {
   .be-model {
     align-self: end;
   }
-  .header__box .header__adress, .header__box .social, .header__box .contact-btn {
+  .header__box .header__adress,
+  .header__box .social,
+  .header__box .contact-btn {
     display: none;
   }
 }
@@ -2445,6 +2523,15 @@ a {
   }
 }
 @media (max-width: 476px) {
+  .about__list-item {
+    align-items: start;
+  }
+  .about__content {
+    padding-top: 0;
+  }
+  .about__inner {
+    padding-top: 0;
+  }
   .record__img {
     width: 713px;
     top: auto;
@@ -2491,7 +2578,8 @@ a {
   .calc__set-line-item {
     font-size: 14px;
   }
-  .footer__tel-box, .footer__adress {
+  .footer__tel-box,
+  .footer__adress {
     width: auto;
   }
   .right__list {

@@ -11,6 +11,7 @@
 @import "why.scss";
 @import "calc.scss";
 @import "record.scss";
+@import "about.scss";
 
 
 
@@ -53,5 +54,8 @@ a {
    position: relative;
 }
 
+.pink-text{
+   text-shadow: 0px 4px 9px #FF00B7, 0px 4px 9px #FF00B7;
+}
 
 @import "adaptive.scss";

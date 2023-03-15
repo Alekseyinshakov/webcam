@@ -1,4 +1,19 @@
 .about {
+   .title {
+      &::after {
+         position: absolute;
+         content: "История студии";
+         font-family: "Montserrat", sans-serif;
+         font-size: 1.6em;
+         left: 0;
+         top: -0.7em;
+         // transform: translateX(-50%);
+         width: 100%;
+         opacity: 0.05;
+         z-index: -1;
+         overflow: hidden;
+       }
+    }
    &__inner {
       padding-top: 109px;
       padding-bottom: 35px;
@@ -56,8 +71,7 @@
  }
  .container {
  }
- .title {
- }
+ 
  .play-video-wrapper {
  }
  .play-video {

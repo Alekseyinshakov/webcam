@@ -1,0 +1,83 @@
+.team {
+    .title {
+        margin-bottom: 100px;
+        &::after {
+            position: absolute;
+            content: "Коллектив";
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.6em;
+            left: 0;
+            top: -0.7em;
+            // transform: translateX(-50%);
+            width: 100%;
+            opacity: 0.05;
+            z-index: -1;
+            overflow: hidden;
+          }
+    }
+    &__inner {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    &__box {
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 35%;
+        padding-top: 30px;
+        .adaptive__img-wrapper{
+            display: none;
+        }
+    }
+    &__descr {
+        margin-bottom: 50px;
+    }
+
+    &__img-wrapper {
+        width: 60%;
+    }
+}
+.team-adaptive-img-small{
+    display: none;
+    transform: scale(1.14);
+ }
+.gallery-btn {
+    max-width: 380px;
+    padding: 0 20px;
+    height: 82px;
+    display: block;
+    margin-bottom: 20px;
+    border: #EC02B2 solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 31px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: #EC02B2;
+    }
+}
+.fill-form {
+    max-width: 380px;
+    padding: 0 20px;
+    height: 82px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    background: #5300ff;
+    box-shadow: 0px 4px 50px rgba(62, 6, 180, 0.51);
+    border-radius: 31px;
+    transition: all 0.3s;
+    &:hover{
+        background: #EC02B2;
+    }
+}

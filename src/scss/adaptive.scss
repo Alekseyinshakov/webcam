@@ -21,6 +21,25 @@
 }
 
 @media (max-width: 1000px) {
+   .reviews{
+      &__text{
+         margin-bottom: 100px;
+      }
+      .swiper-slide{
+         .reviews-slide-name{
+            font-size: 40px;
+            margin-bottom: 15px;
+         }
+         .reviews-slide-experience{
+            font-size: 20px;
+            margin-bottom: 12px;
+         }
+         .reviews-slide-text{
+            font-size: 16px;
+         }
+      }
+      
+   }
    .team{
       &__img-wrapper{
          display: none;
@@ -195,6 +214,22 @@
 }
 
 @media (max-width: 476px) {
+   .reviews__inner{
+      padding-top: 31px;
+   }
+   .reviews__slider .swiper-slider__wrap{
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-bottom: 40px
+   }
+   .reviews__text{
+      font-size: 16px;
+      margin-bottom: 37px;
+   }
+   .reviews .title{
+      margin-bottom: 30px;
+   }
+
    .team__descr{
       font-size: 16px;
    }

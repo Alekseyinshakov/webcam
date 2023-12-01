@@ -2,12 +2,21 @@ import * as flsFunctions from "./modules/functions.js";
 import { rightMenu } from "./modules/right-menu.js";
 import { calc } from "./modules/calc.js";
 import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui"
-import Swiper, { Pagination } from 'swiper';
+import Swiper, { Pagination, EffectCards } from 'swiper';
+
+
 
 window.addEventListener('load', (event) => {
    flsFunctions.isWebp();
    rightMenu()
    calc()
+
+
+  
+
+
+
+
 
    const swiper = new Swiper('.swiper', {
       // Optional parameters
@@ -18,7 +27,7 @@ window.addEventListener('load', (event) => {
       pagination: {
         el: '.swiper-pagination',
       },
-    
+      direction: 'horizontal',
       // Navigation arrows
       // navigation: {
       //   nextEl: '.swiper-button-next',
@@ -30,6 +39,28 @@ window.addEventListener('load', (event) => {
       //   el: '.swiper-scrollbar',
       // },
     });
+
+    const swiper22 = new Swiper('.reviews__slider', {
+      // Optional parameters
+      modules: [EffectCards],
+      effect: "cards",
+      // slideShadows: false,
+      initialSlide: 2,
+      cardsEffect: {
+      centeredSlides: true,
+      perSlideOffset: 40,
+      perSlideRotate: 5,
+      rotate: true,
+      slideShadows: true,
+      // slideShadows: false,
+      
+      },
+      
+      
+
+    
+    });
+    
 
 });
 

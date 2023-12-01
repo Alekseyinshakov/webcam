@@ -2,6 +2,8 @@
 @import "libs/animations.scss";
 @import "libs/fancybox.scss";
 @import "libs/swiper-bundle.scss";
+@import "libs/effect-cards.scss";
+
 
 // libs
 
@@ -13,6 +15,7 @@
 @import "record.scss";
 @import "about.scss";
 @import "team.scss";
+@import "reviews.scss";
 
 
 
@@ -35,6 +38,7 @@ a {
    margin: 0 auto;
    padding-left: 6%;
    padding-right: 6%;
+   overflow: hidden;
 }
 
 .flex-body {
